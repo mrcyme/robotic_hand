@@ -125,6 +125,8 @@ def save_stl(node, level=0):
     for child in node.children:
         save_stl(child, level + 1)
 
+hand.export_stl("hand.stl")
+
 # Starting the tree traversal from the root node 'hand'
 save_stl(hand)
 # %%
